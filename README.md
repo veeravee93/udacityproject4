@@ -1,4 +1,4 @@
-	[![CircleCI](https://dl.circleci.com/status-badge/img/gh/veeravee93/udacityproject4/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/veeravee93/udacityproject4/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/veeravee93/udacityproject4/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/veeravee93/udacityproject4/tree/main)
 
 ## Project Overview
 
@@ -69,18 +69,19 @@ source ~/.devops/bin/activate
 
 ### Setup and Configure Docker locally
 
-- I have used Cloud9 IDE hence docker availed by default 
+- I have used Cloud9 IDE hence docker availed by default.
 
 - Install Hadolint to lint the dockerfile.
 
-Step 1: 
+- Step 1.
 	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && chmod +x /bin/hadolint
 
-- Only if above step given error then try below steps:
-Step 1:
+- Only if above step given error then try below steps.
+
+- Step 1.
 	sudo !!
 	
-Step 2:
+- Step 2.
 	sudo chmod +x /bin/hadolint
 
 - Verify that the Docker Engine installation is successful by running the hello-world image.
