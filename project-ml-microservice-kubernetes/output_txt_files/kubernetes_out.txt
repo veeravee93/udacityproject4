@@ -1,1 +1,53 @@
-<paste log output from Kubernetes-mediated prediction, here>
+voclabs:~/environment/udacityproject4/project-ml-microservice-kubernetes (main) $ ./run_kubernetes.sh 
+deployment.apps/kubernetes-udaproj4 created
+NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/kubernetes-udaproj4   0/1     1            0           0s
+
+NAME                                            DESIRED   CURRENT   READY   AGE
+replicaset.apps/kubernetes-udaproj4-55b7d57d7   1         1         0       0s
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   46m
+
+NAME                                      READY   STATUS              RESTARTS   AGE
+pod/kubernetes-udaproj4-55b7d57d7-ftp8q   0/1     ContainerCreating   0          0s
+Error from server (NotFound): pods "kubernetes-udaproj4-7c6696fb75-kp4d6" not found
+voclabs:~/environment/udacityproject4/project-ml-microservice-kubernetes (main) $ ./run_kubernetes.sh 
+error: failed to create deployment: deployments.apps "kubernetes-udaproj4" already exists
+NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/kubernetes-udaproj4   1/1     1            1           109s
+
+NAME                                            DESIRED   CURRENT   READY   AGE
+replicaset.apps/kubernetes-udaproj4-55b7d57d7   1         1         1       109s
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   48m
+
+NAME                                      READY   STATUS    RESTARTS   AGE
+pod/kubernetes-udaproj4-55b7d57d7-ftp8q   1/1     Running   0          109s
+Error from server (NotFound): pods "kubernetes-udaproj4-55b7d57d7" not found
+voclabs:~/environment/udacityproject4/project-ml-microservice-kubernetes (main) $ ./run_kubernetes.sh 
+error: failed to create deployment: deployments.apps "kubernetes-udaproj4" already exists
+NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/kubernetes-udaproj4   1/1     1            1           2m51s
+
+NAME                                            DESIRED   CURRENT   READY   AGE
+replicaset.apps/kubernetes-udaproj4-55b7d57d7   1         1         1       2m51s
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   49m
+
+NAME                                      READY   STATUS    RESTARTS   AGE
+pod/kubernetes-udaproj4-55b7d57d7-ftp8q   1/1     Running   0          2m51s
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+
+(.devops) voclabs:~/environment/udacityproject4/project-ml-microservice-kubernetes (main) $ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+

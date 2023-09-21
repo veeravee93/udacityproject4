@@ -5,17 +5,17 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=joshvi/app
+dockerpath=veeravee93/app
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 
 #docker tag <your-local-image>:<tag> <your-docker-hub-username>/<repository-name>:<tag>
-sudo docker tag app:latest joshvi/app
+sudo docker tag app:latest veeravee93/app
 
 sudo docker login -u veeravee93@gmail.com -p @Year2024
 # Step 3:
 # Push image to a docker repository
 #docker push <your-docker-hub-username>/<repository-name>:<tag>
-sudo docker push joshvi/app
+sudo docker push veeravee93/app
