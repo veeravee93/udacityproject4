@@ -72,7 +72,8 @@ source ~/.devops/bin/activate
 - I have used Cloud9 IDE hence docker availed by default.
 
 - Install Hadolint to lint the dockerfile.
-'''bash wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && chmod +x /bin/hadolint '''
+```bash
+wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && chmod +x /bin/hadolint ```
 
 - Only if above step given error then try below steps.
 
