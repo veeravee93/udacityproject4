@@ -73,11 +73,15 @@ source ~/.devops/bin/activate
 
 - Install Hadolint to lint the dockerfile.
 
-Step 1: wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && chmod +x /bin/hadolint
+Step 1: 
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && chmod +x /bin/hadolint
 
 - Only if above step given error then try below steps:
-Step 1: sudo !!
-Step 2: sudo chmod +x /bin/hadolint
+Step 1:
+	sudo !!
+	
+Step 2:
+	sudo chmod +x /bin/hadolint
 
 - Verify that the Docker Engine installation is successful by running the hello-world image.
 
